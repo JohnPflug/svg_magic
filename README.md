@@ -1,0 +1,1 @@
+This repo demos the magic of SVG files. Must be run in-browser.

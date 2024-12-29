@@ -1,0 +1,36 @@
+.magic_words {
+    background-image: url("./nightsky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+svg path {
+    fill: transparent;
+    stroke: white;
+    stroke-width: 1;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: textAnimation 3s ease-in-out 1 forwards;
+}
+
+@keyframes textAnimation {
+    0% {
+        stroke-dashoffset: 500;
+    }
+
+    80% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill: white;
+    }
+}
